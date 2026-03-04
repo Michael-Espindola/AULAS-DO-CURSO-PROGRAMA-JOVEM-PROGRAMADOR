@@ -1,0 +1,8 @@
+idade = int(input("insira a idade: "))
+
+if idade >= 18:                             # Se idade for maior ou igual que 18 anos
+    print("Voto obrigatório")               # O voto será obrigatório
+elif idade >= 16 and idade < 18:            # Se a idade for maior ou igual a 16 e menor que 18
+    print("voto opcional")                  # O voto será opcional
+else:                                       # Mas se não atender as condições anterioes
+    print("nao pode voltar")                # Logo, o voto não será permitido.
