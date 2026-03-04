@@ -1,0 +1,11 @@
+n1 = int(input("insira o primeiro número: "))
+n2 = int(input("insira o segundo número: "))
+n3 = int(input("insira o terceiro número: "))
+
+
+if n1> n2 and n1 > n3:                         # Se n1 for maior que n2 e n1 for tb maior que n3
+    print("o maior número é: ", n1)            # O maior número será n1
+elif n2 > n3 and n2 > n3:                      # Se n2 for que maior que n1 e n2 for maior que n3
+    print("o maior número é: ", n2)            # O maior número será n2
+else:                                          # Senão
+    print ("o maior número é: ", n3)           # O maior número será n3
