@@ -1,0 +1,17 @@
+peso = float(input("insira o valor do peso: "))
+altura = float(input("insira o valor da altura: "))
+
+imc = peso / (altura * altura)
+print ("o valor do IMC é: ", imc)
+
+
+if imc >= 18.5 and imc <= 24.9:          # Se imc for maior ou igual que 18.5 e menor ou igual a 24.9
+    print("peso normal")                 # O peso será normal
+elif imc >= 25 and imc <= 29.9 :         # Se o imc for maior ou igual a 25 e menor que 29.9
+    print("sobrepeso")                   # Está com sobrepeso
+elif imc >= 30:                          # Se o imc for maior que 30
+    print("obesidade")                   # Está com obesidade
+else:                                    # Senão estiver com as condições anteriores
+  print("abaixo do peso")                # Está abaixo do peso.
+
+             
