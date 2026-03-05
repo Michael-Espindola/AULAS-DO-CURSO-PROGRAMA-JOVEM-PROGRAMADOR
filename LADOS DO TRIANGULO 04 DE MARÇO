@@ -1,0 +1,11 @@
+lado1 = float(input("infome o valor do lado 1: "))
+lado2 = float(input("informe o valor do lado 2: "))
+lado3 = float(input("informe o valor do lado 3: "))
+
+if lado1 == lado2 and lado1 == lado3 :             # Se lado 1 for igual ao lado 2 E lado 1 for igual ao lado 3
+    print("triangulo equilátero")                  # Será triangulo equilátero
+elif lado1 == lado2 or lado1 == lado3 :            # Se lado 1 for igual ao lado 2 OU o lado 1 for igual ao lado 3
+    print("triangulo isosceles")                   # Será triangulo isósceles
+else:                                              # Senão 
+    print("triangulo escaleno")                    # Será triangulo escaleno.
+            
