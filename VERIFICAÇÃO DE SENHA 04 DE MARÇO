@@ -1,0 +1,8 @@
+senha = (input("insira a sua senha: "))
+
+if len(senha) >= 8 and not senha == "12345678" :                                 # Conta quantos  caracteres a senha tem e precisa ser maior ou igual a 8 e não pode ser sequenciada
+    print("senha válida e segura")                                               
+else:
+    print("senha inválida! precisa de no mínimo 8 caracteres e não pode ser sequenciada")
+    
+
