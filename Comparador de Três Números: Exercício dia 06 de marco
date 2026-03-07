@@ -1,0 +1,21 @@
+# Comparador de Três Números: Peça três números e mostre qual é o maior e qual é o menor
+
+
+
+          # Resolução:
+
+# Na cabeça do codigo, foram criadas 3 variaveis, na qual o usuario devera informar cada valor respectivamente, podendo ser decimal ou nao.
+
+
+n1 = float(input("informe o primeiro número: "))
+n2 = float(input("informe o segundo número: "))
+n3 = float(input("informe o terceiro número: "))
+
+# Aqui no corpo do codigo, foram criadas 3 condicoes: 
+
+if n1 > n2 and n1 > n3 :   # Condiçao 1: Se o primeiro numero for maior que o segundo e maior que o terceiro, logo ele sera o maior numero.
+    print("o maior número é: ", n1)
+elif n2 > n1 and n2 > n3 :    # Condiçao 2: Se o segundo numero for maior que o primeiro e maior que terceiro, logo ele sera o maior numero.
+    print("o maior número é: ", n2)
+else: # Condiçao 3: Se nem nenhum o primeiro numero e nem o segundo for maior, logo o maior numero sera o terceiro.
+     print("o maior número é: ", n3)
