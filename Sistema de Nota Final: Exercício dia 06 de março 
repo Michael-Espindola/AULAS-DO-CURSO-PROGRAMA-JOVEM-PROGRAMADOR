@@ -1,0 +1,21 @@
+#Sistema de Nota Final: Peça nota da prova e nota do trabalho. Calcule média ponderada (prova 
+peso 7, trabalho peso 3). Classifique em Aprovado (>=7), Recuperação (>=5) ou Reprovado (<5).
+
+
+       # Resolução:
+
+# Nessa parte da cabeça do codigo, foram criadas duas variaveis, na qual o usuario deverá informar os valores do trabalho e da prova respectivamente, podendo ser decimal ou nao.
+trabalho = float(input("insira a nota do trabalho: "))
+prova = float(input("insira a nota da prova: "))
+
+# Aqui foi criada uma variavel, em que o valor atribuido será o resultado do calculo media ponderada.
+resultado = (prova * 7 + trabalho * 3) / 10
+
+# Aqui no corpo do codigo foram criadas 3 condiçoes: 
+
+if resultado >= 7 : # Condiçao 1: Se o resultado for maior ou igual a 7, o aluno foi aprovado.
+    print("aprovado")
+elif resultado >= 5 :   # Condiçao 2: Se o resultado for maior ou igual a 5 ( e menor que 7), o aluno esta em recuperaçao.
+    print("recuperaçao")
+else :  # Condiçao 3 : Se o resultado for que 5, o aluno foi reprovado.
+    print("reprovado")
