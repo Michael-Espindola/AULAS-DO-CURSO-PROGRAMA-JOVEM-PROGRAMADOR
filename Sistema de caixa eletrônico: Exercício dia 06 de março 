@@ -1,0 +1,39 @@
+# Simulador de Caixa Eletrônico: Peça um valor e informe quantas notas seriam necessárias de 
+100, 50, 20, 10, 5 e 2.
+
+
+
+                   # Resolução:
+
+
+
+# Na cabeça do código, foi criada apenas uma variável, na qual o usuário deverá informar o valor que deseja sacar
+# e nao é permitido números decimais.
+
+valor_sacado = int(input(" Informe o valor desejado: "))
+
+# Aqui no corpo do código foram criadas três variáveis com a forma de atribuições diferentes e nenhuma delas
+# será fornercida pelo usuário.
+
+# Primeiramente foi criada a variável nota no qual ja foi estabelecida uma sequencia de valores através 
+# da palavra reservada.
+# O comando for foi utilizado para efetuar a operação de um número de cada vez dentro da sequencia estabelecida
+# na variável nota.
+
+for nota in [100, 50, 10, 5, 2] :
+    
+    # Aqui foi criada a variável quantidade_disponíveis que receberá o valor informado pelo usuario e
+    # fará uma divisão inteira pelos valores estabelecidos e sequenciados um por um na variavável nota junto com
+    # comando for.
+    quantidade_disponiveis = valor_sacado // nota
+    
+    # Aqui foi reutilizada  a variável valor_sacado que foi feita uma outra divisão com a variável nota
+    # para que seja determinada a quantidade de vezes que cada valor estabelecido  na variável nota foi utilizada.
+    valor_sacado = valor_sacado % nota
+    
+    # Aqui foi criada uma única condição: Enquanto o resultado da divisão for maior e diferente de 0, vai mostrar
+    # apenas a quantidade de notas usadas.
+    if quantidade_disponiveis > 0:
+    # Aqui vai aparecer na tela o valor da variavel quantidade_disponiveis e o valor da variável nota informando
+    # a quantidade de notas utilizadas.   
+        print(" você receberá ",  quantidade_disponiveis,  " notas de R$ ", nota) 
