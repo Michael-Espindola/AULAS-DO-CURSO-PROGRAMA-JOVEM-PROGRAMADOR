@@ -1,0 +1,33 @@
+
+#  Sistema de Estacionamento: Peça o número de horas estacionadas. Primeira hora custa 8 reais. 
+Cada hora extra custa 5 reais. O valor máximo a pagar é 40 reais
+
+
+
+            # Resolução:
+
+
+
+# Na cabeça do código, foi criado apenas uma variável, na qual o usuário deverá inserir a quantidade de horas.
+# Não será permitido números decimais. 
+
+
+horas_final = int(input("informe o valor da hora: "))
+
+# No corpo do código, foram utilizadas duas condições:
+
+# Condição 1 : Se a quantidade de horas for igual ou inferior a 1h, o valor final será de R$ 8,00 e será informado
+# o valor total.
+if horas_final <= 1 :
+    valor_final = 8
+    print("o valor total é de: R$" , valor_final)
+    
+# Condição 2: Se a quantidade de horas for maior que 1h, o sistema iniciará com o valor de R$ 8,00 
+# (que corresponde ao valor inicial), pegará a quantidade de horas totais e subtrará por menos 1 e depois 
+# multiplicará por 5 e mostrará o valor total.
+else : 
+    valor_final = 8 + (horas_final - 1) * 5
+    print("o valor total é de: R$" , valor_final)
+
+# O valor máximo cobrado será de até R$ 40,00     
+valor_final2 = min(valor_final, 40)
