@@ -10,6 +10,7 @@
 
 
 
+
 # Nessa etapa da cabeça do código foram criadas 03 variáveis correspondentes a cada lado do triângulo, na 
 # qual o usuário irá inserir os valores, podendo ser decimal ou nao.  
 
@@ -30,6 +31,5 @@ if l1 + l2 > l3 and l2 + l3 > l1 and l1 + l3 > l2 :
         print("triangulo isosceles")
         
     # Condiçao 3: Se nenhum lado for igual, o triângulo será escaleno    
-    else:
-      print("triangulo escaleno")
+    else:  
         print("triangulo escaleno")
