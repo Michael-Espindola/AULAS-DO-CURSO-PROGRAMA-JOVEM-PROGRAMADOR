@@ -1,0 +1,30 @@
+# Sistema de Imposto: Peça o salário. Regras: até 2000 → isento; até 3500 → imposto de 10%; 
+acima de 3500 → imposto de 15%. Mostrar valor do imposto e salário líquido
+
+
+             # Resolução:
+
+
+# Na cabeça do codigo, foi criada apenas uma variavel, na qual o usuario devera inserir o valor do salario, como salario geralmente tem um valor quebrado, será permitido introduzir  numeros decimais ( o float).
+
+
+salario = float(input("informe o salário: "))
+
+# Aqui no corpo do codigo, teremos 3 condiçoes:
+
+# Condiçao 1 : Se o valor do salario for menor ou igual a 2000, o imposto de renda será insento e informado junto o com valor final sem desconto.
+if salario <= 2000 :  
+    imposto = 0
+    print("insento," "salário liquido é: R$", salario)
+    
+ # Condiçao 2 : Se o salario for menor ou igual a 3500 (e maior que 2000), o desconto do imposto de renda sera de 10% e sera informado junto com o valor do salario apos o desconto.
+elif salario <= 3500 :
+    imposto = salario * 0.10
+    salario_final = salario - imposto
+    print("imposto de 10%, " " salário liquido é: R$", salario_final )
+    
+# Condiçao 3 : Se o valor do salario estiver acima dos limites citados anteriormente, o desconto do imposto de renda sera de 15% e sera informado junto com o valor do salario apos o desconto.
+else:
+    imposto = salario * 0.15
+    salario_final = salario - imposto
+    print("imposto de 15%, ""salário liquido é: R$ ,",    salario_final)      
