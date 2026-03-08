@@ -1,0 +1,27 @@
+# Sistema de Frete por Peso: Peça o peso do pacote. Até 1 kg → frete 10; até 5 kg → frete 20; acima 
+de 5 kg → frete 35
+
+
+                 # Resolução:
+
+
+ # Na cabeça do código, existe apenas uma variável, no qual o usuário deverá inserir o valor de algum 
+# peso e permitindo números decimais.
+
+peso = float(input("informe o peso do produto: "))
+
+# No corpo do código foram criadas três condições:
+
+# Condição 1: Se o peso for igual ou inferior a 1kg, o sistema informará que o valor do frete é de R$ 10,00.
+if peso <= 1 :
+    print("frete de R$ 10,00")
+    
+# Condição 2: Se o peso for igual ou superior que 2kg e igual ou inferior a 5kg, o sistema informará que
+# o valor do frete é de R$ 20,00.    
+elif peso >=2 and peso <= 5 :
+    print("frete de R$ 20,00")
+    
+# Condição 3: Se o peso for diferente do que foi estabelecido acima, o sistema informará que o valor
+# do frete é de R$ 35,00.    
+else :
+    print("frete de 35")      
