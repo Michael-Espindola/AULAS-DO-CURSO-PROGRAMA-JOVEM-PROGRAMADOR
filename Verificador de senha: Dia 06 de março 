@@ -1,0 +1,25 @@
+# Validador de Senha: Peça uma senha. A senha é válida se tiver pelo menos 8 caracteres e não for 
+'12345678'.
+
+
+                # Resolução:
+
+
+# Na cabeça do codigo, foram criadas duas variaveis:
+ #  1) senha : Nessa variavel, o usuario deverá digitar uma senha.
+ # 2) caracteres_especiais : diferente da variavel anterior, nessa variavel nao receberá valores informados pelo usuario, mas sim irá  estabelecer alguns caracteres.
+
+
+senha = input("digite a senha: ")
+
+caracteres_especiais = ["@", "#", "$"]
+
+# Aqui no corpo teremos 2 condiçoes:
+    
+# Condiçao 1 : Será obrigatorio o preenchimento de no minimo 8 caracteres e nao será permitido numeros sequenciais e obrigará o uso de algum caractere especial que foi estabelecido anteriormente seja incluido.
+if len(senha) >= 8 and senha != "12345678" and caracteres_especiais:
+    print("senha valida")
+
+# Condiçao 2 : Se o preenchimento da senha nao atender os requisitos acima, nao será permitida e obrigará ao usuario seguir o que foi estabelecido.
+else : 
+    print("senha invalida, tem que ter mais de 8 caracteres, incluir 1 caractere especial e diferente de 12345678")
