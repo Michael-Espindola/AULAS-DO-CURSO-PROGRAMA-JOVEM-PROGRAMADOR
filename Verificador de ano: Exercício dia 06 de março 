@@ -1,0 +1,36 @@
+# Verificador de Ano: Peça um ano e informe se é #bissexto. Depois diga se pertence ao século XX 
+#(1901–2000), XXI (2001–2100) ou outro.
+
+
+
+           # Resolução:
+
+# Na cabeça do código, tem apenas 1 variável e o usuário deverá informar algum ano e não permitindo número decimal.
+
+ano = int(input("informe um ano: "))
+
+# No corpo do código foram criadas 5 condições:
+
+# Condição 1: pegará o valor da variável ano e dividirá por 4 e depois a divisão completa pra chegar a 1 ou 0, se 
+# o resto for igual a 0, será ano bissexto.
+if ano % 4 == 0 :
+    print("O ano ", ano, "é bissexto")
+    
+# Condição 2 : Se o resto da divisão por diferente de 0, então o ano não é bissexto.    
+else :
+    print("O ano", ano, " não é bissexto")
+    
+# Condição 3: Se o ano estiver dentro da margem de 1901 a 2000, o sistema informará que o ano pertence
+# ao século XX.    
+if ano >= 1901 and ano <= 2000 :
+    print(" e esse ano é do século XX")
+    
+# Condição 4 : Se o ano estiver dentro da margem de 2001 a 3000, o sistema informará que o ano pertence
+# ao século XXI.    
+elif ano >= 2001 and ano <= 3000 :
+    print("e esse ano é do século XXI")
+    
+# Condição 5 : Se o ano não estiver enquadrado nas margens estabelecidas anteriormente, o sistema 
+# informará que o ano pertence a outro século.    
+else:
+    print("e esse ano é de um outro século")
