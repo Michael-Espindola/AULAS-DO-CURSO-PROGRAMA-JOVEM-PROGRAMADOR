@@ -1,0 +1,294 @@
+#                               DESAFIO EM GRUPO DO DIA 11/03/2026 - SISTEMA DE RECOMENDAÇÃO DE CURSO
+
+
+# ENUNCIADO DO PROBLEMA:
+
+​#Contexto:
+
+#​Uma escola de tecnologia quer ajudar novos alunos a descobrir qual curso fazer primeiro.
+#​Cada grupo deverá criar um programa que analise o perfil do usuário e recomende um curso.
+
+​#Objetivo:
+
+#​Criar um programa que:
+
+#​Pergunte algumas informações do usuário.
+#​Analise as respostas usando operadores lógicos.
+​#Recomende um curso adequado
+
+#​Perguntas que o programa deve fazer
+
+#​O programa deve pedir algumas informações para o usuário, por exemplo:
+​#Nome
+​#Idade
+​#Você já programou antes? (sim/não)
+​#Você gosta mais de lógica ou design? (logica/design)
+​#Você tem computador em casa? (sim/não)
+​#Você tem interesse em design? (sim/não)
+​#etc
+​
+#Resultado:
+​
+#Com base na resposta sugerir algum curso para o usuário
+
+
+#                                             RESOLUÇÃO:
+
+# CURSOS OFERECIDOS PELA NOSSA ESCOLA:
+
+# DESENVOLVIMENTO DE SISTEMAS.
+# MANUTENÇÃO E SUPORTE.
+# INFORMÁTICA PARA A WEB.
+# REDES DE COMPUTADORES.
+# INTELIGÊNCIA ARTIFICIAL E DADOS:
+
+# DESCRIÇÃO DOS CURSOS:
+
+# DESENVOLVIMENTO DE SISTEMAS:
+
+# Este é o curso para quem quer aprender a criar programas de computador e aplicativos de celular.
+# O que faz:
+# Ensina a escrever códigos (como o Python, que você já está estudando!) para dizer ao computador o que ele deve fazer.
+# Exemplo: É como aprender a construir uma casa, desde os tijolos (o código) até a pintura (a interface que o usuário vê). 
+
+# INFORMÁTICA PARA A WEB:
+
+# Focado especificamente em tudo o que vive no navegador (Chrome, Safari, etc.).
+# O que faz:
+# Ensina a criar sites, lojas virtuais e sistemas que funcionam online.
+# Exemplo: Sabe quando você entra em um site e ele é bonito e fácil de usar? Foi alguém dessa área que planejou as cores e os botões.
+
+# MANUTENÇÃO E SUPORTE:
+
+# Ideal para quem gosta de entender como as máquinas funcionam por dentro.
+# O que faz:
+# Ensina a montar e consertar computadores, instalar peças (hardware) e resolver problemas de software (quando o Windows trava, por exemplo).
+# Exemplo: Se um computador não liga ou está muito lento, esse profissional descobre o motivo e "cura" a máquina.
+
+
+
+# REDES DE COMPUTADORES: 
+
+# Focado em como os computadores conversam uns com os outros.
+# O que faz:
+# Ensina a configurar a internet, cabos, roteadores e garantir que os dados cheguem com segurança de um lugar para o outro.
+# Exemplo: É como construir as estradas e os sinais de trânsito para que as informações viajem sem bater e sem se perder.
+
+# INTELIGÊNCIA ARTIFICIAL E DADOS:
+
+# Uma das áreas que mais cresce hoje em dia.
+# O que faz:
+# Ensina o computador a "pensar" e a encontrar padrões em montanhas de informação.
+# Exemplo: Sabe quando a Netflix recomenda um filme que você adora? É a Inteligência Artificial trabalhando.
+
+        
+#                                     AQUI COMEÇA O CÓDIGO:                             
+
+
+# Aqui na cabeça do código teremos 06 variáveis:
+
+# nome: essa variável serve para o usuário inserir o seu nome.
+nome = input("Para começar o teste é preciso que informe o seu nome: ")
+
+
+# Enquanto aqui embaixo teremos 05 variáveis e 05 derivados de cada variável.
+# As variáveis são: web, manutenção, desenvolvilmento, redes, inteligencia.
+# Cada variável dessas citadas acimas são os 05 cursos oferecidos pela nossa instituição que é uma escola de tecnlogia,
+# São eles: - web: para o curso de informática para a web. 
+#           - manutenção: para o curso de manutenção e suporte.
+#           - redes: para o curso de redes de computadores.
+#           - desenvolvimento: para o curso de desenvolvimento de sistemas.
+#           - inteligencia: para o curso de inteligência artificial e dados.
+
+# Esses derivados das variáveis, são perguntas que o sistema irá exbir para o usuário responder sim ou não no questionário.
+# Elas estão misturadas porque as perguntas precisam seguir em ordem aleatória por temas.
+
+ 
+# Primeira pergunta sobre informática para a web:
+web1 = input ("Você se interessa por como as lojas virtuais funcionam para vender produtos? (sim/não)")
+# Primeira pergunta sobre manutenção e suporte:
+manutenção1 = input("Você tem curiosidade de abrir um aparelho para ver como ele é por dentro? (sim/não)")
+# Primeira pergunta sobre inteligência artificial e dados:
+inteligencia1 = input("Você tem curiosidade sobre como os robôs e assistentes de voz (como a Alexa) aprendem?(sim/não)")
+# Primeira pergunta sobre desenvolvimento de sistemas:
+desenvolvimento1 = input ("Você gosta de resolver quebra-cabeças ou desafios de lógica? (sim/não)")
+# Primeira pergunta sobre redes de computadores:
+redes1 = input("Você se interessa por como os cabos e roteadores conectam o mundo inteiro?(sim/não)")
+# Segunda pergunta sobre informática para a web:
+web2 = input ("Você repara quando um site é bonito ou quando as cores não combinam? (sim/não)")
+# Segunda pergunta sobre manutenção e suporte:
+manutenção2 = input("Você gostaria de saber o nome de cada peça (placa-mãe, memória, processador) do computador? (sim/não)")
+# Segunda pergunta sobre inteligência artificial e dados:
+inteligencia2 = input("Você gosta de analisar números, tabelas ou listas para encontrar padrões?(sim/não)")
+# Segunda pergunta sobre desenvolvimento de sistemas:
+desenvolvimento2 = input ("Você se sente bem passando bastante tempo concentrado escrevendo no computador? (sim/não)")
+# Segunda pergunta sobre redes de computadores:
+redes2 = input("Você tem curiosidade de saber como o Wi-Fi chega na sua casa toda?(sim/não)")
+# Terceira pergunta sobre informática para a web:
+web3 = input ("Você gosta de desenhar ou planejar o visual das coisas antes de começar?")
+# Terceira pergunta sobre manutenção e suporte:
+manutenção3 = input("Você prefere trabalhar com as mãos, montando e desmontando peças físicas?")
+# Terceira pergunta sobre inteligência artificial e dados:
+inteligencia3 = input("Você se interessa por assuntos de ficção científica que envolvem máquinas inteligentes?(sim/não)")
+# Terceira pergunta sobre desenvolvimento de sistemas:
+desenvolvimento3 = input ("Você tem paciência para procurar um erro pequeno até encontrar a solução?(sim/não)")
+# Terceira pergunta sobre redes de computadores:
+redes3 = input("Você prefere garantir que o sistema todo esteja conectado e funcionando sem quedas?(sim/não)")
+# Quarta pergunta sobre informática para a web:
+web4 = input ("Você gostaria de aprender a criar páginas na internet que milhares de pessoas visitam? (sim/não)")
+# Quarta pergunta sobre manutenção e suporte:
+manutenção4 = input("Você gosta de ajudar amigos e familiares quando o celular ou PC deles trava? (sim/não)")
+# Quarta pergunta sobre inteligência artificial e dados:
+inteligencia4 = input("Você gostaria de trabalhar prevendo o que vai acontecer no futuro com base em dados?(sim/não)")
+# Quarta pergunta sobre desenvolvimento de sistemas:
+desenvolvimento4 = input ("Você gosta de entender como as regras de um jogo funcionam por dentro? (sim/não)")
+# Quarta pergunta sobre redes de computadores:
+redes4 = input("Você gostaria de aprender a configurar a segurança para evitar 'hackers'?(sim/não)")
+# Quinta pergunta sobre informática para a web:
+web5 = input ("Você tem facilidade em organizar informações de um jeito que os outros entendam? (sim/não)")
+# Quinta pergunta sobre manutenção e suporte:
+manutenção5 = input("Você se sente satisfeito ao ver um equipamento quebrado voltando a funcionar? (sim/não)")
+# Quinta pergunta sobre inteligência artificial e dados:
+inteligencia5 = input("Você gosta de matemática ou de organizar grandes quantidades de informação?(sim/não)")
+# Quinta pergunta sobre desenvolvimento de sistemas:
+desenvolvimento5 = input ("Você gostaria de criar seu próprio aplicativo de celular um dia? (sim/não)")
+# Quinta pergunta sobre redes de computadores:
+redes5 = input("Você gosta da ideia de gerenciar como as informações viajam entre empresas?(sim/não)")
+
+# Aqui no corpo do código, teremos as condições separadas por blocos:
+
+# Nesse primeiro bloco, teremos o conjunto de perguntas do questionário de desenvolvimento de sistemas:
+
+# Se a resposta da PRIMEIRA pergunta de DESENVOLVIMENTO for SIM E a SEGUNDA pergunta de DESENVOLVIMENTO for SIM E a TERCEIRA pergunta de
+# DESENVOLVIMENTO for SIM: 
+if  desenvolvimento1 == "sim" and desenvolvimento2 == "sim" and desenvolvimento3 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de DESENVOLVIMENTO DE SISTEMAS.   
+    print ("%s, Indicamos para você o nosso curso de: DESENVOLVIMENTO DE SISTEMAS" % nome)
+# Se a resposta da TERCEIRA pergunta de DESENVOLVIMENTO for SIM E a QUARTA pergunta de DESENVOLVIMENTO for SIM E a QUINTA pergunta de
+# DESENVOLVIMENTO for SIM:     
+elif    desenvolvimento3 == "sim" and desenvolvimento4 == "sim" and desenvolvimento5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de DESENVOLVIMENTO DE SISTEMAS.    
+    print ("%s, Indicamos para você o nosso curso de: DESENVOLVIMENTO DE SISTEMAS" % nome)
+# Se a resposta da PRIMEIRA pergunta de DESENVOLVIMENTO for SIM E a QUARTA pergunta de DESENVOLVIMENTO for SIM E a QUINTA pergunta de
+# DESENVOLVIMENTO for SIM:    
+elif    desenvolvimento1 == "sim" and desenvolvimento4 == "sim" and desenvolvimento5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de DESENVOLVIMENTO DE SISTEMAS.     
+     print ("%s, Indicamos para você o nosso curso de: DESENVOLVIMENTO DE SISTEMAS" % nome)
+# Se a resposta da PRIMEIRA pergunta de DESENVOLVIMENTO for SIM E a TERCEIRA pergunta de DESENVOLVIMENTO for SIM E a QUARTA pergunta de
+# DESENVOLVIMENTO for SIM:      
+elif    desenvolvimento1 == "sim" and desenvolvimento3 == "sim" and desenvolvimento4 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de DESENVOLVIMENTO DE SISTEMAS.     
+     print ("%s, Indicamos para você o nosso curso de: DESENVOLVIMENTO DE SISTEMAS" % nome)     
+# SENÃO:        
+else:
+# o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO.      
+    print("%s, indicamos para você o nosso curso de: INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO" % nome)      
+   
+ 
+# Nesse segundo, bloco teremos o conjunto de perguntas do questionário de informática para a web:
+
+# Se a resposta da PRIMEIRA pergunta de WEB for SIM E a SEGUNDA pergunta de WEB for SIM E a TERCEIRA pergunta de
+# WEB for SIM:     
+if web1 == "sim" and web2 == "sim" and web3 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INFORMÁTICA PARA A WEB.    
+    print ("%s, Indicamos para você o nosso curso de: INFORMÁTICA PARA A WEB" % nome)
+# Se a resposta da TERCEIRA pergunta de WEB for SIM E a QUARTA pergunta de WEB for SIM E a QUINTA pergunta de
+# WEB for SIM:    
+elif web3 == "sim" and web4 == "sim" and web5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INFORMÁTICA PARA A WEB.    
+    print ("%s, Indicamos para você o nosso curso de: INFORMÁTICA PARA A WEB" % nome)
+# Se a resposta da PRIMEIRA pergunta de WEB for SIM E a TERCEIRA pergunta de WEB for SIM E a QUARTA pergunta de
+# WEB for SIM:    
+elif web1 == "sim" and web3 == "sim" and web4 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INFORMÁTICA PARA A WEB.    
+    print ("%s, Indicamos para você o nosso curso de: INFORMÁTICA PARA A WEB" % nome)
+# Se a resposta da PRIMEIRA pergunta de WEB for SIM E a QUARTA pergunta de WEB for SIM E a QUINTA pergunta de
+# WEB for SIM: 
+elif web1 == "sim" and web4 == "sim" and web5 == "sim" : 
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INFORMÁTICA PARA A WEB.
+      print ("%s, Indicamos para você o nosso curso de: INFORMÁTICA PARA A WEB" % nome)
+# SENÃO:      
+else:
+# o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO.    
+    print("%s, indicamos para você o nosso curso de: INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO" % nome) 
+    
+# Nesse terceiro bloco, teremos o conjunto de perguntas do questionário de manutenção e suporte: 
+         
+# Se a resposta da PRIMEIRA pergunta de MANUTENÇÃO E SUPORTE for SIM E a SEGUNDA pergunta de MANUTENÇÃO E SUPORTE for SIM E a TERCEIRA pergunta de
+# MANUTENÇÃO E SUPORTE for SIM:     
+if manutenção1 == "sim" and manutenção2 == "sim" and manutenção3 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de MANUTENÇÃO E SUPORTE.    
+    print ("%s, Indicamos para você o nosso curso de: MANUTENÇÃO E SUPORTE" % nome)
+# Se a resposta da TERCEIRA pergunta de MANUTENÇÃO E SUPORTE for SIM E a QUARTA pergunta de MANUTENÇÃO E SUPORTE for SIM E a QUINTA pergunta de
+# MANUTENÇÃO E SUPORTE for SIM:      
+elif manutenção3 == "sim" and manutenção4 == "sim" and manutenção5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de MANUTENÇÃO E SUPORTE.     
+    print ("%s, Indicamos para você o nosso curso de: MANUTENÇÃO E SUPORTE" % nome)
+# Se a resposta da PRIMEIRA pergunta de MANUTENÇÃO E SUPORTE for SIM E a QUARTA pergunta de MANUTENÇÃO E SUPORTE for SIM E a QUINTA pergunta de
+# MANUTENÇÃO E SUPORTE for SIM:       
+elif manutenção1 == "sim" and manutenção4 == "sim" and manutenção5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de MANUTENÇÃO E SUPORTE.     
+    print ("%s, Indicamos para você o nosso curso de: MANUTENÇÃO E SUPORTE" % nome)
+# Se a resposta da PRIMEIRA pergunta de MANUTENÇÃO E SUPORTE for SIM E a TERCEIRA pergunta de MANUTENÇÃO E SUPORTE for SIM E a QUARTA pergunta de
+# MANUTENÇÃO E SUPORTE for SIM:    
+elif manutenção1 == "sim" and manutenção3 == "sim" and manutenção4 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de MANUTENÇÃO E SUPORTE.     
+    print ("%s, Indicamos para você o nosso curso de: MANUTENÇÃO E SUPORTE" % nome)    
+# SENÃO:    
+else:
+# o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO.    
+    print("%s, indicamos para você o nosso curso de: INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO" % nome)         
+
+# Nesse quarto bloco, teremos o conjunto de perguntas do questionário de redes de computadores: 
+
+# Se a resposta da PRIMEIRA pergunta de REDES DE COMPUTADORES for SIM E a SEGUNDA pergunta de REDES DE COMPUTADORES for SIM E a TERCEIRA pergunta de
+# REDES DE COMPUTADORES for SIM:     
+if  redes1== "sim" and redes2 == "sim" and redes3 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de REDES DE COMPUTADORES.    
+    print ("%s, Indicamos para você o nosso curso de: REDES DE COMPUTADORES" % nome)
+# Se a resposta da TERCEIRA pergunta de REDES DE COMPUTADORES for SIM E a QUARTA pergunta de REDES DE COMPUTADORES for SIM E a QUINTA pergunta de
+# REDES DE COMPUTADORES for SIM:     
+elif redes3 == "sim" and redes4 == "sim" and redes5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de REDES DE COMPUTADORES.        
+    print ("%s, Indicamos para você o nosso curso de: REDES DE COMPUTADORES" % nome)
+# Se a resposta da PRIMEIRA pergunta de REDES DE COMPUTADORES for SIM E a TERCEIRA pergunta de REDES DE COMPUTADORES for SIM E a QUARTA pergunta de
+# REDES DE COMPUTADORES for SIM:      
+elif redes1 == "sim" and redes3 == "sim" and redes5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de REDES DE COMPUTADORES.        
+    print ("%s, Indicamos para você o nosso curso de: REDES DE COMPUTADORES" % nome)
+# Se a resposta da PRIMEIRA pergunta de REDES DE COMPUTADORES for SIM E a TERCEIRA pergunta de REDES DE COMPUTADORES for SIM E a QUARTA pergunta de
+# REDES DE COMPUTADORES for SIM:     
+elif manutenção1 == "sim" and manutenção3 == "sim" and manutenção4 == "sim" :    
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de REDES DE COMPUTADORES.
+        print ("%s, Indicamos para você o nosso curso de: REDES DE COMPUTADORES" % nome) 
+# SENÃO:           
+else:
+# o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO.     
+    print("%s, indicamos para você o nosso curso de: INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO" % nome)    
+ 
+# Nesse quinto bloco, teremos o conjunto de perguntas do questionário de inteligência artificial e dados:  
+
+# Se a resposta da PRIMEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM E a SEGUNDA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS 
+# for SIM E a TERCEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM:     
+if  inteligencia1== "sim" and inteligencia2 == "sim" and inteligencia3 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTELIGÊNCIA ARTIFICIAL E DADOS.    
+    print ("%s, Indicamos para você o nosso curso de: INTELIGÊNCIA ARTIFICIAL E DADOS" % nome)
+# Se a resposta da TERCEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM E a QUARTA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS 
+# for SIM E a QUINTA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM    
+elif inteligencia3 == "sim" and inteligencia4 == "sim" and inteligencia5 == "sim" :
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTELIGÊNCIA ARTIFICIAL E DADOS.    
+    print ("%s, Indicamos para você o nosso curso de: INTELIGÊNGIA ARTIFICIAL E DADOS" % nome) 
+elif inteligencia1 == "sim" and inteligencia4 == "sim" and inteligencia5 == "sim" :
+# Se a resposta da PRIMEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM E a TERCEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS 
+# for SIM E a QUARTA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM    
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTELIGÊNCIA ARTIFICIAL E DADOS.    
+    print ("%s, Indicamos para você o nosso curso de: INTELIGÊNCIA ARTIFICIAL E DADOS" % nome)
+# Se a resposta da PRIMEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM E a TERCEIRA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS 
+# for SIM E a QUARTA pergunta de INTELIGÊNCIA ARTIFICIAL E DADOS for SIM    
+elif inteligencia1 == "sim" and inteligencia3 == "sim" and inteligencia4 == "sim" : 
+# Então, o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTELIGÊNCIA ARTIFICIAL E DADOS.    
+  print ("%s, Indicamos para você o nosso curso de: INTELIGÊNCIA ARTIFICIAL E DADOS" % nome) 
+# SENÃO:        
+else:
+# o sistema MOSTRARÁ na tela uma mensagem junto com o nome do usuário e indicará a ele o curso de INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO.     
+    print("%s, indicamos para você o nosso curso de: INTRODUÇÃO A TECNOLOGIA DA INFORMAÇÃO" % nome)
