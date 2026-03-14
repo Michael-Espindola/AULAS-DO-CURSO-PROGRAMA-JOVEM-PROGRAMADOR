@@ -1,0 +1,27 @@
+# Peça nome, idade e senha. Regras: - Nome: apenas letras -Idade: apenas 
+# números 
+# Senha: mínimo 6 caracteres e apenas letras e números
+
+
+# RESOLUÇAO: 
+
+nome = input("informe o nome: ")
+idade = input("informe a idade: ")
+senha = input("informe a senha: ")
+
+if nome.isalpha() :
+    print("nome válido")
+else:
+    print("nome inválido")
+    
+
+if idade.isdigit() :
+    print("idade válida")
+else:
+    print("idade inválida")
+    
+if senha.isalnum () and  len(senha) >= 6 :
+    print(" senha válida")
+else: 
+    print("senha inválida")    
+    
