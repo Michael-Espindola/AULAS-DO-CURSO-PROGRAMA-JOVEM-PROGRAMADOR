@@ -1,0 +1,25 @@
+# O aluno precisa abrir um cofre digital.
+# Para isso, deve digitar código, senha e nível de acesso corretos.
+# Se todas as condições forem verdadeiras → cofre abre.
+
+
+#   RESOLUÇÃO:
+
+# criar variáveis para estabelecer um padrao:
+codigo_padrao = 8456
+senha_padrao = 7890
+nivel_acesso = 8
+
+# criar variáveis para receber dados do usuário:
+codigo_usuario = input("informe o codigo : ")
+senha_usuario =  input("informe a senha: ")
+acesso_usuario = input("informe o nivel de acesso: ")
+
+# verificação de autenticidade: usar condicão if else e operadores relacionais para fazer as verificação com os valores das variaveis
+# pre-estabelecida com os valores das variaveis informadas pelo usuário
+
+# verificação de codigo:
+if codigo_usuario == codigo_padrao and senha_usuario == senha_padrao and acesso_usuario == nivel_acesso and codigo_usuario == 4 and len(senha_usuario) == 4  and len(acesso_usuario) == 1:
+    print("cofre aberto")
+else: 
+    print("cofre fechado")    
